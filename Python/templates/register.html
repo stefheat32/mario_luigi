@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{% block title %}Register page{% endblock %}
+
+{% block extra_styles %}
+   <link
+   rel="stylesheet"
+   href="{{ url_for('static', filename='styles/style_accounts.css') }}"
+   />
+   <link
+   rel="stylesheet"
+   href="{{ url_for('static', filename='styles/register_style.css') }}"
+   />
+   <link
+   rel="stylesheet"
+   href="{{ url_for('static', filename='styles/style_navigation.css') }}"
+   />
+{% endblock %}
+
+{% block content %}
+   {% include "navigation_bar.html" %}
+   <div id="register_container">
+      <!-- PRINTING FLASH MESSAGE -->
+      {% with messages = get_flashed_messages(with_categories=true) %} {% if
+      messages %} {% for category, message in messages %}
+      <span class="{{ category }}">{{ message }}</span>
+      {% endfor %} {% endif %} {% endwith %}
+
+      <!-- REGISTER FORM -->
+      <h1>Register</h1>
+      <form action="/register" method="POST">
+         <label>First name:</label>
+         <input
+            type="text"
+            name="name"
+            placeholder="Mario"
+            autocomplete="given-name"
+            required
+         />
+         <label>Last name:</label>
+         <input
+            type="text"
+            name="lastName"
+            placeholder="Mario"
+            autocomplete="family-name"
+            required
+         />
+         <label>Email:</label>
+         <input
+            type="text"
+            name="email"
+            placeholder="mariolovespeach@gmail.com"
+            required
+         />
+         <label>Password:</label>
+         <input
+            type="password"
+            name="password"
+            placeholder="StayAwayFromPeach"
+            required
+         />
+         <label>Phone number:</label>
+         <input type="tel" name="phone" placeholder="+39 331 6088174" />
+         <button type="submit">Continue</button>
+      </form>
+      <span class="redirect_message"
+         >Already have an account? Log in
+         <a href="{{ url_for('get_login') }}">here</a></span
+      >
+      <span class="or_message">OR</span>
+      <a
+         class="continue_button"
+         href="{{ url_for('get_home') }}"
+         style="text-decoration: none"
+      >
+         <button>Continue as guest</button></a
+      >
+   </div>
+{% endblock %}

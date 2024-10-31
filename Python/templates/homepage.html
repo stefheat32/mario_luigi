@@ -1,0 +1,79 @@
+{% extends 'base.html' %} {% block title %}Homepage{% endblock %} {% block
+extra_styles %}
+<link
+   rel="stylesheet"
+   href="{{ url_for('static', filename='styles/home_page.css') }}"
+/>
+<link
+   rel="stylesheet"
+   href="{{ url_for('static', filename='styles/style_navigation.css') }}"
+/>
+{% endblock %} {% block content %} {% include "navigation_bar.html" %}
+<section id="second_page">
+   <div id="second_page_container">
+      <div id="second_page_column">
+         <h3>World famous owners</h3>
+         <p>
+            Join us for an unforgettable meal where every dish is crafted with
+            love, fresh ingredients, and a dash of Italian magic! From Mario's
+            famous pizzas to Luigi's garden-fresh pasta, each bite will
+            transport you straight to Italy.
+         </p>
+         <button
+            data-url="{{ url_for('get_about_us') }}"
+            onclick="window.location.href=this.getAttribute('data-url')"
+         >
+            About Us
+         </button>
+      </div>
+      <img
+         src="../static/images/Luigi2.jpg"
+         alt="second_page_image"
+         id="second_page_image"
+      />
+   </div>
+</section>
+<section id="third_page">
+   <div id="third_page_container">
+      <h1>Open every day</h1>
+      <div id="third_page_buttons">
+         <button
+            data-url="{{ url_for('get_menu') }}"
+            onclick="window.location.href=this.getAttribute('data-url')"
+         >
+            Menu
+         </button>
+         <button
+            data-url="{{ url_for('get_order') }}"
+            onclick="window.location.href=this.getAttribute('data-url')"
+         >
+            Order now
+         </button>
+      </div>
+   </div>
+</section>
+<footer>
+   <img src="../static/images/logo.png" alt="logo" />
+   <div class="contact_container">
+      <span>Emails:</span>
+      <span>stefanocloud32@gmail.com</span>
+      <span>stefanocloud32@gmail.com</span>
+      <span>stefanocloud32@gmail.com</span>
+      <span>stefanocloud32@gmail.com</span>
+   </div>
+   <div class="contact_container">
+      <span>Phone numbers:</span>
+      <span>+391234567893</span>
+      <span>+359876556778</span>
+      <span>+359234554309</span>
+      <span>+359945389845</span>
+   </div>
+   <div class="signatures">
+      <img src="../static/images/signature.png" alt="signature_Stefano" />
+      <img src="" alt="signature" />
+      <img src="" alt="signature" />
+      <img src="" alt="signature" />
+   </div>
+</footer>
+
+{%endblock %}

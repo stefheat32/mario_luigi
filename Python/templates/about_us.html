@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}About us page{% endblock %}
+
+{% block extra_styles %}
+   <link
+   rel="stylesheet"
+   href="{{ url_for('static', filename='styles/style_navigation.css') }}"
+   />
+   <link
+   rel="stylesheet"
+   href="{{ url_for('static', filename='styles/about_us_page.css') }}"
+   />
+{% endblock %}
+
+{% block content %}
+   {% include "navigation_bar.html" %}
+   <div id="about_us_container">
+      <h1>Who are we ?</h1>
+      <div id="about_us_elements_container">
+         <div class="container">
+            <div class="image_container">
+               <img src="../static/images/mario.png" alt="">
+            </div>
+            <div class="text_container">
+               At Mario & Luigi’s, we’re not just passionate about pizza; we’re committed to sharing the flavors and warmth of our Italian heritage with everyone who walks through our doors. Our story begins in the heart of the Mushroom Kingdom, where the love for food brought us together. After countless adventures, we decided to bring that spirit of joy and togetherness into our very own pizzeria.
+            </div>
+         </div>
+         <div class="container">
+            <div class="text_container">
+               Our Philosophy Our pizzeria is built on the belief that every meal should be a celebration. We use only the freshest ingredients, sourced from local suppliers, to create authentic Italian dishes that remind you of home. Whether it’s our signature pizzas, hearty pastas, or delightful desserts, each dish is crafted with care and a sprinkle of magic.  
+            </div>
+            <div class="image_container">
+               <img src="../static/images/luigi.png" alt="">
+            </div>
+         </div>
+      </div>
+   </div>
+{% endblock %}

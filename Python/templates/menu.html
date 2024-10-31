@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}Menu page{% endblock %}
+
+{% block extra_styles %}
+   <link
+   rel="stylesheet"
+   href="{{ url_for('static', filename='styles/style_navigation.css') }}"
+   />
+   <link
+   rel="stylesheet"
+   href="{{ url_for('static', filename='styles/menu_style.css') }}"
+   />
+{% endblock %}
+
+{% block content %}
+   {% include "navigation_bar.html" %}
+   <body>
+   <div class="container">
+   <h1>MENU</h1>
+      {% for category in menuItems %}
+      <div class="menu-section">
+         <div class="menu-category">{{ category.category }}</div>
+         <ul>
+            {% for item in category["items"] %}
+            <li class="menu-item">
+               <div class="menu-item-name">{{ item.name }}</div>
+               <div class="menu-item-ingredients">{{ item.ingredients }}</div>
+               <div class="menu-item-price">
+                  ${{ "%.2f"|format(item.price) }}
+               </div>
+            </li>
+            {% endfor %}
+         </ul>
+      </div>
+   </body>
+      {% endfor %}
+   {% endblock %}
+   

@@ -1,0 +1,84 @@
+{
+   "menu": [
+      {
+         "category": "Red pizzas",
+         "items": [
+            {
+               "name": "Margherita",
+               "ingredients": "San Marzano tomatoes, fresh mozzarella, basil leaves",
+               "price": 5.0
+            },
+            {
+               "name": "Diavola",
+               "ingredients": "Tomato, mozzarella, spicy salami, chili flakes",
+               "price": 5.5
+            },
+            {
+               "name": "Quattro Stagioni",
+               "ingredients": "Tomato, mozzarella, artichokes, mushrooms, prosciutto, black olives",
+               "price": 7.0
+            },
+            {
+               "name": "Marinara",
+               "ingredients": "Tomato, garlic, oregano",
+               "price": 6.0
+            },
+            {
+               "name": "Quattro Formaggi",
+               "ingredients": "Mozzarella, gorgonzola, fontina, parmesan cheese, tomato",
+               "price": 7.5
+            },
+            {
+               "name": "Capricciosa",
+               "ingredients": "Tomato, mozzarella, cooked ham, mushrooms, black olives, artichokes, hard-boiled egg",
+               "price": 6.5
+            }
+         ]
+      },
+      {
+         "category": "White pizzas",
+         "items": [
+            {
+               "name": "Prosciutto e Funghi",
+               "ingredients": "Mozzarella, cooked ham, mushrooms, black pepper, rosemary",
+               "price": 6.0
+            },
+            {
+               "name": "Patate e Rosmarino",
+               "ingredients": "Potatoes, mozzarella, rosemary, black pepper",
+               "price": 5.5
+            },
+            {
+               "name": "Quattro Formaggi",
+               "ingredients": "Mozzarella, gorgonzola, fontina, parmesan cheese, black pepper",
+               "price": 7.0
+            }
+         ]
+      },
+      {
+         "category": "Desserts",
+         "items": [
+            {
+               "name": "Tiramisù",
+               "ingredients": "Ladyfigers, espresso coffee, mascarpone, cocoa powder",
+               "price": 5.0
+            },
+            {
+               "name": "Cannoli",
+               "ingredients": "Cannoli shells, ricotta, powdered sugar",
+               "price": 2.5
+            },
+            {
+               "name": "Mustaccioli",
+               "ingredients": "Honey, almonds, cinnamon, cloves, dark chocolate",
+               "price": 4.5
+            },
+            {
+               "name": "Profiterol",
+               "ingredients": "cream puffs, chantilly cream, dark chocolate, fresh cream",
+               "price": 3.0
+            }
+         ]
+      }
+   ]
+}

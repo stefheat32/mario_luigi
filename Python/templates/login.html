@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block title %}Login page{% endblock %}
+
+{% block extra_styles %}
+   <link
+   rel="stylesheet"
+   href="{{ url_for('static', filename='styles/style_accounts.css') }}"
+   />
+   <link
+   rel="stylesheet"
+   href="{{ url_for('static', filename='styles/login_style.css') }}"
+   />
+   <link
+   rel="stylesheet"
+   href="{{ url_for('static', filename='styles/style_navigation.css') }}"
+   />
+{% endblock %}
+
+{% block content %}
+   {% include "navigation_bar.html" %}
+   <div id="login_container">
+      <!-- PRINTING FLASH MESSAGE -->
+      {% with messages = get_flashed_messages(with_categories=true) %} {% if
+      messages %} {% for category, message in messages %}
+      <span class="{{ category }}">{{ message }}</span>
+      {% endfor %} {% endif %} {% endwith %}
+      <!-- TITLE -->
+      <h1>Log in</h1>
+      <!-- LOGIN FORM -->
+      <form action="/login" method="POST">
+         <label>Email:</label>
+         <input
+            type="text"
+            name="email"
+            placeholder="luigihateswaluigi@gmail.com"
+            required
+         />
+         <label>Password:</label>
+         <input
+            type="password"
+            name="password"
+            placeholder="WaluigiSucks"
+            required
+         />
+         <button type="submit">Continue</button>
+      </form>
+      <span class="redirect_message"
+         >Don't have an account? Register
+         <a href="{{ url_for('get_register') }}">here</a></span
+      >
+      <span class="or_message">OR</span>
+      <a
+         class="continue_button"
+         href="{{ url_for('get_home') }}"
+         style="text-decoration: none"
+      >
+         <button>Continue as guest</button></a
+      >
+   </div>
+{% endblock %}

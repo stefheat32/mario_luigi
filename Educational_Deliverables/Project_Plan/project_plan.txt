@@ -1,0 +1,38 @@
+PROJECT PLAN
+
+CLIENT:
+Mr.Panucci
+
+TEAM:
+The Alligators
+Stefano Schiavone: 558150@student.fontys.nl
+Dimitar Malamski: 546327@student.fontys.nl
+Teoman Esen: 548400@student.fontys.nl
+Ivan Dalemski: 546396@student.fontys.nl
+
+CURRENT SITUATION:
+The restaurant operates in an inefficient way:
+   - Mario takes an order from a customer
+   - Mario shouts the order to the kitchen
+   - Luigi attempts to hear what is being shouted and writes it down on his notepad
+   - Luigi bakes the pizza in the oven
+   - Luigi shouts to Mario when the pizza is ready
+   - Mario picks up the pizza and brings it to the customer if he hears Luigi
+
+PROBLEM DESCRIPTION:
+Customers are often uncomfortable with the methods of communication that Mario and Luigi use. Additionally Luigi sometimes makes the wrong pizzas due to
+the poor communication and this causes a waste of resources (time, ingredients, energy, etc)
+
+PROJECT GOAL:
+Increase profit, more customer traction, less waste of resources and higher customer satisfaction.
+
+DELIVERABLES:
+- Functioning system
+- explanatory guide
+
+NON-DELIVERABLES:
+- Active training for employees
+
+CONSTRAINTS:
+- The team must present the deliverables before November 7th 2024. The software and hardware portion will be available and ready for use at the time of delivery.
+- The deliverables must be in line with the taste and requirements of the client

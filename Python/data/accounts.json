@@ -1,0 +1,34 @@
+[
+   {
+      "email": "mariolovespeach@gmail.com",
+      "password": "peach",
+      "name": "Mario",
+      "lastName": "Plumber",
+      "phone": "123456789",
+      "role": "owner"
+   },
+   {
+      "email": "luigihateswaluigi@gmail.com",
+      "password": "waluigisucks",
+      "name": "Luigi",
+      "lastName": "Ghosthunter",
+      "phone": "9987654321",
+      "role": "owner"
+   },
+   {
+      "email": "stefanocloud32@gmail.com",
+      "password": "stefano",
+      "name": "Stefano",
+      "lastName": "Schiavone",
+      "phone": "3316088174",
+      "role": "customer"
+   },
+   {
+      "email": "mitemalamata@gmail.com",
+      "password": "121312314321",
+      "name": "123",
+      "lastName": "Mario",
+      "phone": "2312",
+      "role": "customer"
+   }
+]

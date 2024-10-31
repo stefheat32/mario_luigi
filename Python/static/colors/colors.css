@@ -1,0 +1,16 @@
+:root {
+   /* GREENS */
+   --primary_green: rgb(56, 102, 65);
+   --hover_green: rgba(56, 102, 65, 0.8);
+   --secondary_green: rgb(106, 154, 78);
+   --secondary_hover_green: rgba(106, 154, 78, 0.8);
+   --input_border_green: rgba(56, 102, 65, 0.6);
+   --header_green: ;
+   /* REDS */
+   --primary_red: rgb(188, 71, 73);
+   --hover_red: rgba(188, 71, 73, 0.8);
+   --secondary_red: rgb(217, 85, 89);
+   --secondary_hover_red: rgba(217, 85, 89, 0.8);
+   --input_border_red: rgba(188, 71, 73, 0.6);
+   --header_red: ;
+}

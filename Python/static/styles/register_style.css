@@ -1,0 +1,174 @@
+/* Inheriting the nav bar styles file in order to change it's colour */
+@import url("style_navigation.css");
+
+body {
+   overflow: hidden;
+   /* background-color: var(--primary_green); */
+   background-image: url("../images/background.jpg");
+   height: 100vh;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   position: relative;
+}
+
+/* Adding filter layer above the background, but below the elements, 
+so it can darken the background image */
+body::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(109, 1, 1, 0.2);
+   z-index: -1;
+}
+
+/* Changing the colours of the nav bar depending on the page */
+#navigation-bar {
+   background-color: var(--primary_red);
+}
+
+#navigation-bar .shopping-cart:hover img {
+   content: url("../icons/shopping-cart-white.png");
+   background-color: var(--primary_red);
+}
+
+#navigation-bar a:not(.shopping-cart):hover {
+   background-color: var(--secondary_hover_red);
+}
+
+#navigation-bar a:not(.logo_pizza):hover {
+   background-color: var(--primary_red);
+}
+
+/* Changing the colours of the language toggle button depending on the page */
+.check-toggle-round-flat:checked ~ .off {
+   color: rgb(42, 6, 6);
+}
+
+.switch > span.on {
+   color: rgb(42, 6, 6);
+}
+
+.check-toggle + label {
+   display: block;
+   position: relative;
+   cursor: pointer;
+   width: 100%;
+   height: 100%;
+   background-color: rgb(42, 6, 6);
+   border-radius: 60px;
+}
+
+/* Register container css */
+#register_container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: #f2e8cf;
+   min-height: 92vh;
+   width: 50vw;
+   padding: 0.43% 2% 2% 2%;
+   box-sizing: border-box;
+   overflow-y: auto;
+   /* Hide scrollbar across all major browsers */
+   scrollbar-width: none; /* Firefox */
+   -ms-overflow-style: none; /* IE and Edge */
+   font-family: Arial, sans-serif;
+}
+
+#register_container::-webkit-scrollbar {
+   display: none; /* Chrome, Safari */
+}
+
+/* Form Styles */
+form {
+   width: 80%;
+   max-width: 400px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+form input {
+   width: 100%;
+   font-size: 1rem;
+   margin: 1rem 0;
+   caret-color: var(--primary_red);
+   border-radius: 5px;
+   border: 3px solid transparent;
+   padding: 3%;
+   transition: all 0.3s ease;
+}
+
+form input:focus {
+   border: 3px solid var(--input_border_red);
+   box-shadow: 0 0 10px var(--primary_red);
+   outline: none;
+}
+
+form button {
+   width: 100%;
+   padding: 5%;
+   border-radius: 5px;
+   font-size: 1rem;
+   background-color: var(--primary_red);
+   border: none;
+   transition: all 0.3s ease;
+}
+
+form button:hover {
+   background-color: var(--hover_red);
+   box-shadow: 0 0 5px var(--primary_red);
+}
+
+form button:active {
+   background-color: var(--primary_red);
+   box-shadow: 0 0 10px var(--primary_red);
+}
+
+/* Continue Button Styles */
+.continue_button button {
+   width: 100%;
+   padding: 5%;
+   border-radius: 5px;
+   font-size: 1rem;
+   background-color: var(--secondary_red);
+   border: none;
+   transition: all 0.3s ease;
+}
+
+.continue_button button:hover {
+   background-color: var(--secondary_hover_red);
+   box-shadow: 0 0 5px var(--secondary_red);
+}
+
+.continue_button button:active {
+   background-color: var(--secondary_red);
+   box-shadow: 0 0 10px var(--secondary_red);
+}
+
+/* Authentication Error Styles */
+.authenticationError {
+   border: 1px solid var(--primary_red);
+   background-color: var(--secondary_hover_red);
+   padding: 1.5% 10%;
+   border-radius: 0 0 15px 15px;
+}
+
+/* Message To User Styles */
+.messageToUser {
+   border: 1px solid var(--primary_green);
+   background-color: var(--secondary_hover_green);
+   padding: 1.5% 10%;
+   border-radius: 0 0 15px 15px;
+}
+
+/* Heading */
+h1 {
+   font-weight: 800;
+   font-size: 2.5rem;
+   margin-top: 10%;
+}

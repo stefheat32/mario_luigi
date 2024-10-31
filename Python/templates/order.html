@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Order</title>
+      <script src="{{ url_for('static', filename='scripts/order_form.js') }}"></script>
+   </head>
+   <body>
+      <div class="pizza_container">
+         <button onclick="incrementPizzaQuantity('margherita')">+</button>
+         <button onclick="decrementPizzaQuantity('margherita')">-</button>
+         <input
+            type="text"
+            class="quantity"
+            id="margherita_quantity"
+            value="0"
+         />
+      </div>
+      <div class="pizza_container">
+         <button onclick="incrementPizzaQuantity('diavola')">+</button>
+         <button onclick="decrementPizzaQuantity('diavola')">-</button>
+         <input type="text" class="quantity" id="diavola_quantity" value="0" />
+      </div>
+      <div class="pizza_container">
+         <button onclick="incrementPizzaQuantity('capricciosa')">+</button>
+         <button onclick="decrementPizzaQuantity('capricciosa')">-</button>
+         <input
+            type="text"
+            class="quantity"
+            id="capricciosa_quantity"
+            value="0"
+         />
+      </div>
+      <div class="pizza_container">
+         <button onclick="incrementPizzaQuantity('4Formaggi')">+</button>
+         <button onclick="decrementPizzaQuantity('4Formaggi')">-</button>
+         <input
+            type="text"
+            class="quantity"
+            id="4Formaggi_quantity"
+            value="0"
+         />
+      </div>
+
+      <button onclick="submitOrder()">SUBMIT</button>
+   </body>
+</html>

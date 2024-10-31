@@ -1,0 +1,15 @@
+What are the processes of our business case ? How are they related ?
+
+The processes are diveded into different sections, depending on the type of  account the current user is using:
+   - If the user is an Admin, they have full access to the system and can view all the information about orders or customers;
+   - If the user is logged into their regular customer account, they can make orders and their name will be remembered in the system, so they don't have to log in again for future orders;
+   - If the user is logged in as guest, they can only make orders and have to fill some info, while placing the set order, so the order can be processed by the system;
+
+There is no need for verbal communication between Mario and Luigi. The process of handling orders and making pizzas will be done through notifications in the system.
+
+PARTICIPANTS:
+   - Customers;
+   - It team (us);
+   - Mario and Luigi; 
+   
+

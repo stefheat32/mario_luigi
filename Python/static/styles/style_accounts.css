@@ -1,0 +1,88 @@
+html,
+body {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   width: 100vw;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+header {
+   width: 100vw;
+   height: 8vh;
+}
+
+.authenticationError {
+   padding-top: 1.5%;
+   padding-bottom: 1.5%;
+   padding-left: 10%;
+   padding-right: 10%;
+   border-bottom-left-radius: 15px;
+   border-bottom-right-radius: 15px;
+   border-top: none;
+}
+
+/* Form styles */
+form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 40%;
+}
+
+form label {
+   align-self: flex-start;
+   font-size: 25px;
+}
+
+form input {
+   width: 100%;
+   font-size: 20px;
+   margin-top: 5%;
+   margin-bottom: 8%;
+   border-radius: 5px;
+   border: 3px solid transparent;
+   padding: 3%;
+   transition: all 0.3s ease;
+}
+
+form input:focus {
+   outline: none;
+}
+
+form button {
+   width: 100%;
+   padding: 5%;
+   border-radius: 5px;
+   font-size: 20px;
+   border: 1px solid transparent;
+}
+
+.redirect_message,
+.or_message {
+   margin-top: 2%;
+   font-size: 16px;
+}
+
+.or_message {
+   font-size: 18px;
+}
+
+.continue_button {
+   margin-top: 2%;
+   width: 30%;
+}
+
+.continue_button button {
+   width: 100%;
+   padding: 5%;
+   border: 0;
+   border-radius: 5px;
+   font-size: 16px;
+}
