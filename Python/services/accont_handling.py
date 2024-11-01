@@ -2,7 +2,7 @@ from services.json_ops import append_to_json, read_from_json
 import re
 
 # validation that the email is in the system
-def email_exists(email, filename = "Python/data/accounts.json"):
+def email_exists(email, filename = "data/accounts.json"):
     accounts = read_from_json(filename)
 
     for account in accounts:
