@@ -77,7 +77,7 @@ def get_about_us():
 #routing the 'menu' page
 @app.route('/menu', methods=['GET'])
 def get_menu():
-	menuItems = read_from_json("Python/data/menu.json")
+	menuItems = read_from_json("data/menu.json")
 	return render_template("menu.html", menuItems=menuItems["menu"])
 
 #routing the 'order' page
@@ -114,12 +114,12 @@ def get_shopping_cart():
 # VISUALIZING QUEUE
 @app.route('/queue', methods=['GET'])
 def get_queue():
-	queue = read_from_json("Python/data/orders.json")
+	queue = read_from_json("data/orders.json")
 	return render_template("queue.html")
 
 @app.route('/api/queue', methods=['GET'])
 def get_queue_api():
-   queue = read_from_json("Python/data/orders.json")
+   queue = read_from_json("data/orders.json")
    return {"queue": queue}
 
 if __name__ == '__main__':

@@ -44,13 +44,13 @@ def append_to_json(fileName, newEntry):
       print(f"An error occurred while appending to the file: {e}")
 
 def save_order(order):
-   orders = read_from_json("Python/data/orders.json")
+   orders = read_from_json("data/orders.json")
    orderId = 0
    if orders:
       last_order = orders[-1]
       orderId = last_order["orderId"] + 1
 
    order["orderId"] = orderId
-   append_to_json("Python/data/orders.json", order)
+   append_to_json("data/orders.json", order)
 
    return orderId
